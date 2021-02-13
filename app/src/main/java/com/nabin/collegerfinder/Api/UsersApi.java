@@ -1,8 +1,10 @@
 package com.nabin.collegerfinder.Api;
 
+import com.nabin.collegerfinder.model.Cart;
 import com.nabin.collegerfinder.model.User;
 import com.nabin.collegerfinder.serverResponse.ImageResponse;
 import com.nabin.collegerfinder.serverResponse.SignupResponse;
+import com.nabin.collegerfinder.serverResponse.cartResponse;
 
 import okhttp3.MultipartBody;
 import retrofit2.Call;
@@ -26,25 +28,25 @@ public interface UsersApi {
     @POST("users/login")
     Call<SignupResponse> CheckUser(@Field("username") String username, @Field("password") String password);
 
-//    @FormUrlEncoded
-//    @POST("cart/checkcart")
-//    Call<cartResponse> checkcart(@Field("itemID") String itemID, @Field("userid") String userid);
-//
-//    @FormUrlEncoded
-//    @POST("cart/checkcart")
-//    @Headers("Content-Type:application/x-www-form-urlencoded")
-//    Call<cartResponse> checkcart(
-//            @Header("Authorization") String token,
-//            @Field("userId") String userid,
-//            @Field("itemID") String itemID);
-//
-//
-//    @FormUrlEncoded
-//    @Headers("Content-Type:application/x-www-form-urlencoded")
-//    Call<Cart> addcart(
-//            @Header("Authorization") String token,
-//            @Field("itemID") String itemID
-//    );
+    @FormUrlEncoded
+    @POST("cart/checkcart")
+    Call<cartResponse> checkcart(@Field("itemID") String itemID, @Field("userid") String userid);
+
+    @FormUrlEncoded
+    @POST("cart/checkcart")
+    @Headers("Content-Type:application/x-www-form-urlencoded")
+    Call<cartResponse> checkcart(
+            @Header("Authorization") String token,
+            @Field("userId") String userid,
+            @Field("itemID") String itemID);
+
+
+    @FormUrlEncoded
+    @Headers("Content-Type:application/x-www-form-urlencoded")
+    Call<Cart> addcart(
+            @Header("Authorization") String token,
+            @Field("itemID") String itemID
+    );
     @Multipart
     @POST("upload")
     Call<ImageResponse> uploadImage(@Part MultipartBody.Part img);

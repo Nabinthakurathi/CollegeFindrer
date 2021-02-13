@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/Home"
+        android:title="All Colleges"
+        android:actionLayout="@layout/activity_college__list" />
+
+    <item android:id="@+id/BBA"
+        android:title="BBA"
+        android:actionLayout="@layout/activity_b_b_a_" />
+
+    <item android:id="@+id/IT"
+        android:title="It"
+        android:actionLayout="@layout/activity_it_" />
+
+    <item android:id="@+id/PLUS"
+        android:title="+2 Colleges"
+        android:actionLayout="@layout/activity_plus"/>
+
+    <item android:id="@+id/Cart"
+        android:title="Added Carts"
+        android:actionLayout="@layout/activity_cartlist_activity"/>
+
+    <item android:id="@+id/userprofile"
+        android:title="Profile"
+        android:actionLayout="@layout/activity_user_profile_avtivity"
+        />
+
+    <item android:id="@+id/Map"
+        android:title="Location"
+        android:actionLayout="@layout/activity_maps"
+        />
+
+
+    <item android:id="@+id/Logout"
+        android:title="Logout"
+        />
+
+</menu>
