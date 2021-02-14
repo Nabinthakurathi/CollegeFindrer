@@ -2,11 +2,11 @@ package com.nabin.collegerfinder.model;
 
 public class Item {
     private String CollegeName;
-    private int Location;
+    private String Location;
     private String detail;
     private String image;
 
-    public Item(String itemname, int price, String detail, String image) {
+    public Item(String itemname, String price, String detail, String image) {
         this.CollegeName = itemname;
         this.Location = price;
         this.detail = detail;
@@ -21,11 +21,11 @@ public class Item {
         this.CollegeName = itemname;
     }
 
-    public int getPrice() {
+    public String getPrice() {
         return Location;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(String price) {
         this.Location = price;
     }
 

@@ -49,8 +49,8 @@ public class ItemRecyclerAdapter extends  RecyclerView.Adapter<ItemRecyclerAdapt
             public void onClick(View v) {
                 Intent intent = new Intent(mContext, MainActivity.class);
                 intent.putExtra("image",item.getImage());
-                intent.putExtra("ProductName", item.getItemName());
-                intent.putExtra("price", item.getPrice());
+                intent.putExtra("CollegeName", item.getItemName());
+                intent.putExtra("Location", item.getPrice());
                 intent.putExtra("detail", item.getDetail());
                 mContext.startActivity(intent);
             }
