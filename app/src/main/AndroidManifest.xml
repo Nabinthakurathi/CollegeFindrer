@@ -45,8 +45,7 @@
         <activity android:name=".UserProfile_avtivity" />
         <activity android:name=".College_List" />
         <activity android:name=".CollegeDetails_activity" />
-        <activity android:name=".engeer_activity" />
-        <activity android:name=".Plus_activity" />
+        <activity android:name=".plus_activity" />
         <activity android:name=".it_Activity" />
         <activity android:name=".BBA_Activity" />
         <activity android:name=".Dashboard_activity" />

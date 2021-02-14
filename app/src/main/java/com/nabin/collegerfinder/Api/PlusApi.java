@@ -13,14 +13,14 @@ import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.Part;
 
-public interface EngineerApi {
-    @GET("Engineer/all")
+public interface PlusApi {
+    @GET("Plus/all")
     Call<List<Item>> getAllItemsLIst();
 
     @Multipart
     @POST("uploads")
     Call<ImageResponse> uploadImage(@Part MultipartBody.Part img);
 
-    @POST("engineer/engineer")
+    @POST("Plus/Plus")
     Call<Void> insertItem(@Body Item item);
 }

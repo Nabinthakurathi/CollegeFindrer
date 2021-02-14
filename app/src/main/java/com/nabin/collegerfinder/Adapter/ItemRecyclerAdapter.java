@@ -40,7 +40,7 @@ public class ItemRecyclerAdapter extends  RecyclerView.Adapter<ItemRecyclerAdapt
         final Item item = itemList.get(position);
         Picasso.get().load(url.base_url+"/uploads/"+item.getImage()).into(holder.imageView);
 
-        holder.Price.setText("Rs. "+item.getPrice());
+        holder.Price.setText("Kathmandu"+item.getPrice());
         holder.detail.setText(item.getDetail());
         holder.ProductName.setText(item.getItemName());
 
@@ -50,7 +50,7 @@ public class ItemRecyclerAdapter extends  RecyclerView.Adapter<ItemRecyclerAdapt
                 Intent intent = new Intent(mContext, MainActivity.class);
                 intent.putExtra("image",item.getImage());
                 intent.putExtra("ProductName", item.getItemName());
-                intent.putExtra("price", String.valueOf(item.getPrice()));
+                intent.putExtra("price", item.getPrice());
                 intent.putExtra("detail", item.getDetail());
                 mContext.startActivity(intent);
             }

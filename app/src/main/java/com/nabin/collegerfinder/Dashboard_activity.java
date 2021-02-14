@@ -88,7 +88,7 @@ public class Dashboard_activity extends AppCompatActivity {
 
                     case R.id.Cart: startActivity(new Intent(Dashboard_activity.this, Cartlist_activity.class));
                         return false;
-                    case R.id.PLUS: startActivity(new Intent(Dashboard_activity.this, Plus_activity.class));
+                    case R.id.PLUS: startActivity(new Intent(Dashboard_activity.this, plus_activity.class));
                         return false;
                     case R.id.Logout :
                         final DialogInterface.OnClickListener dialog = new DialogInterface.OnClickListener() {

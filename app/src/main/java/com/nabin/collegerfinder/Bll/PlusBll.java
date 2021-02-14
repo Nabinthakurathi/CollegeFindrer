@@ -1,6 +1,6 @@
 package com.nabin.collegerfinder.Bll;
 
-import com.nabin.collegerfinder.Api.EngineerApi;
+import com.nabin.collegerfinder.Api.PlusApi;
 import com.nabin.collegerfinder.Api.RetrofitCaller;
 import com.nabin.collegerfinder.model.Item;
 import com.nabin.collegerfinder.StrictMode.strictmodeclass;
@@ -13,13 +13,13 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class EngineerBll {
+public class PlusBll {
     List<Item> itemList=  new ArrayList<>();
     Boolean status=false;
-    EngineerApi engineerApi  = RetrofitCaller.getInstance().create(EngineerApi.class);
+    PlusApi plusApi = RetrofitCaller.getInstance().create(PlusApi.class);
 
     public  List<Item> getAllItems() {
-        Call<List<Item>> itemsCall = engineerApi.getAllItemsLIst();
+        Call<List<Item>> itemsCall = plusApi.getAllItemsLIst();
         strictmodeclass.StrictMode();
         try {
             itemList=  itemsCall.execute().body();
@@ -30,7 +30,7 @@ public class EngineerBll {
     }
 
     public  Boolean insertItem(Item item){
-        Call<Void> voidCall = engineerApi.insertItem(item);
+        Call<Void> voidCall = plusApi.insertItem(item);
         voidCall.enqueue(new Callback<Void>() {
             @Override
             public void onResponse(Call<Void> call, Response<Void> response) {

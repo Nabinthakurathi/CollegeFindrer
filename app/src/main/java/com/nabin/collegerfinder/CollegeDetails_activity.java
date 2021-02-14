@@ -50,8 +50,8 @@ public class CollegeDetails_activity extends AppCompatActivity {
             itemid = bundle.getString("_id");
             String Images = bundle.getString("image");
             Picasso.get().load(url.base_url + "uploads/" + Images).into(imgMain1);
-            tvdname.setText(bundle.getString("itemname"));
-            tvdprice.setText("Rs: " + bundle.getString("price"));
+            tvdname.setText(bundle.getString("CollegeName"));
+            tvdprice.setText(" " + bundle.getString("Location"));
             tvdesc.setText(bundle.getString("detail"));
 
 

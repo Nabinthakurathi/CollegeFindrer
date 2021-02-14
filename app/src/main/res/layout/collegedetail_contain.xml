@@ -33,7 +33,7 @@
                         android:id="@+id/tvprice"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Rs. 1200"
+                        android:text="Kathmandu"
                         android:textColor="#FF7F00"
                         android:textSize="20dp"
                         android:textStyle="bold" />

@@ -1,32 +1,32 @@
 package com.nabin.collegerfinder.model;
 
 public class Item {
-    private String itemname;
-    private int price;
+    private String CollegeName;
+    private int Location;
     private String detail;
     private String image;
 
     public Item(String itemname, int price, String detail, String image) {
-        this.itemname = itemname;
-        this.price = price;
+        this.CollegeName = itemname;
+        this.Location = price;
         this.detail = detail;
         this.image = image;
     }
 
     public String getItemName() {
-        return itemname;
+        return CollegeName;
     }
 
     public void setItemName(String itemname) {
-        this.itemname = itemname;
+        this.CollegeName = itemname;
     }
 
     public int getPrice() {
-        return price;
+        return Location;
     }
 
     public void setPrice(int price) {
-        this.price = price;
+        this.Location = price;
     }
 
     public String getDetail() {

@@ -8,10 +8,10 @@ import android.content.Context;
 import android.os.Bundle;
 
 import com.nabin.collegerfinder.Adapter.ItemRecyclerAdapter;
-import com.nabin.collegerfinder.Bll.EngineerBll;
+import com.nabin.collegerfinder.Bll.PlusBll;
 
-public class engeer_activity extends AppCompatActivity {
-    private RecyclerView EngineerRecyclerView;
+public class plus_activity extends AppCompatActivity {
+    private RecyclerView PlusRecyclerView;
     private Context mContext;
 
     @Override
@@ -24,10 +24,10 @@ public class engeer_activity extends AppCompatActivity {
         PopulateRecyclerViewList();
     }
     public void PopulateRecyclerViewList(){
-        EngineerRecyclerView = findViewById(R.id.Engineer);
-        EngineerBll engineerBll = new EngineerBll();
-        ItemRecyclerAdapter itemRecyclerAdapter = new ItemRecyclerAdapter(this,engineerBll.getAllItems());
-        EngineerRecyclerView.setAdapter(itemRecyclerAdapter);
-        EngineerRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        PlusRecyclerView = findViewById(R.id.Engineer);
+        PlusBll plusBll = new PlusBll();
+        ItemRecyclerAdapter itemRecyclerAdapter = new ItemRecyclerAdapter(this, plusBll.getAllItems());
+        PlusRecyclerView.setAdapter(itemRecyclerAdapter);
+        PlusRecyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 }
