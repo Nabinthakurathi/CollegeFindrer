@@ -45,7 +45,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         List<LongitudeLongitude> latLngs = new ArrayList<>();
         latLngs.add(new LongitudeLongitude(27.706195,85.3300396, "Marker in Softwarica College"));
-        latLngs.add(new LongitudeLongitude(27.6712584,85.3474506, "Marker in Liquor Store"));
+        latLngs.add(new LongitudeLongitude(27.68984, 85.339821, "Marker in Uniglobe College"));
+        latLngs.add(new LongitudeLongitude(27.6879188,85.3504956, "Marker in Nasa College"));
+        latLngs.add(new LongitudeLongitude(27.7067942, 85.3254032, "Marker in NIC College"));
+        latLngs.add(new LongitudeLongitude(27.7055835,85.3343087, "Marker in Sunway College"));
+        latLngs.add(new LongitudeLongitude(27.7087027,85.3259876, "Marker in Islington College"));
+
 
         CameraUpdate center, zoom;
         for (int i= 0; i <latLngs.size(); i++) {
